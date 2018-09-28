@@ -5,14 +5,37 @@ This section contains :
 4. Lists 
 */
 void main() {
-  // Define lists
-  var x = [16, 2, 35, 46, 5, 67, 700, 81, 9];
-  x.sort();
-  // x.forEach((f) => print(f));
-  var names = ['Hassan', 'Ali', 'Hussein', 'Farah'];
-  // names.forEach((f, x) => print(f, x));
-  // Input
-  stdout.write('What is your name: ');
-  String inputText = stdin.readLineSync();
-  print("Hello " + inputText);
+  //* Three ways to create a list */
+
+  // 1 create a list of size 0
+  var names = new List();
+  names.add("Ahmed");
+  names.add("Ali");
+  names.add("Hussein");
+  names.add("Liban");
+  print(names);
+
+  // 2.
+  var colors = ['blue', 'red', 'green', 'yellow'];
+  // Removing lists from the list
+  colors.remove('blue');
+  colors.add('Buluug');
+
+  print(colors);
+
+  // 3. to mention the size of list while initializing
+  var years = new List(6);
+  years[0] = 1990;
+  years[1] = 1994;
+  years[2] = 1997;
+  years[3] = 1998;
+  years[4] = 1999;
+  years[5] = 2004;
+
+  for (var i = 0; i < years.length; i++) {
+    print(years[i]);
+    if (years[i] == 1998) {
+      break;
+    }
+  }
 }
