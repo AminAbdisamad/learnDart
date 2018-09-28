@@ -27,6 +27,32 @@ void main() {
   b = 10.0;
   c = pow(a, b);
   print(c);
+
 // Strings
+  String firstName = 'Geedi';
+  String lastName = 'Hassan';
+  // print(firstName + ' ' + lastName);
+  firstName.startsWith('G')
+      ? print('Your Name starts with G')
+      : print("Your name doesnt start with G");
+  lastName.isNotEmpty
+      ? print("you are doing good don't forget your lastName")
+      : print("Where's your lastName");
+
+  String Message = 'sideen iskaga diiwaan galiyaa somnog conference';
+  var M = Message.trim();
+  print(M);
+  var fariin = Message.toUpperCase();
+
+  fariin.contains('SOMNOG')
+      ? print("Halkan iska diiwaan gali www.somnog.so")
+      : fariin.isEmpty
+          ? print("Waxba maadan soo dirin")
+          : print(
+              "Waan helnay fariintaada waxaana kuugu soo jawaabi doonaa si dag dag ah. Mahadsanid");
+
 // Booleans
+
+  bool bl = true;
+  bl ? print('welcome to our event') : print("make it true");
 }
