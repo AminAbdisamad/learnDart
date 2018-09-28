@@ -42,6 +42,8 @@ void main() {
   String Message = 'sideen iskaga diiwaan galiyaa somnog conference';
   var M = Message.trim();
   print(M);
+
+  // to make strings uppercase case we use toUpperCase() method
   var fariin = Message.toUpperCase();
 
   fariin.contains('SOMNOG')
@@ -53,6 +55,6 @@ void main() {
 
 // Booleans
 
-  bool bl = true;
+  bool bl = false;
   bl ? print('welcome to our event') : print("make it true");
 }
