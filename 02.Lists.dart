@@ -1,9 +1,18 @@
+import 'dart:io';
+
 /* 
 This section contains : 
 4. Lists 
 */
 void main() {
   // Define lists
-  var x = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-  print(x);
+  var x = [16, 2, 35, 46, 5, 67, 700, 81, 9];
+  x.sort();
+  // x.forEach((f) => print(f));
+  var names = ['Hassan', 'Ali', 'Hussein', 'Farah'];
+  // names.forEach((f, x) => print(f, x));
+  // Input
+  stdout.write('What is your name: ');
+  String inputText = stdin.readLineSync();
+  print("Hello " + inputText);
 }
