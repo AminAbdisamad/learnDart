@@ -1,5 +1,6 @@
 import 'dart:math';
 
+// Use var for dynamic variables
 /* 
 This section contains : 
 1. Numbers - Int and double 
