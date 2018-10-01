@@ -4,7 +4,7 @@ import 'dart:math';
 main() {
   var users = {'id': 1, 'Name': 'Hassan', 'Email': 'Hassan@gmail.com'};
   // For loop and forEach
-  // users.forEach((f, i) => print(i));
+  users.forEach((f, i) => print(i));
   NumberGuesser();
 }
 
