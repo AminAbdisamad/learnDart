@@ -22,15 +22,18 @@ NumberGuesser() {
     var guess = stdin.readLineSync();
     int g = int.parse(guess);
     limit -= 1;
-    if (limit == 0) {
-      print(
-          "Sorry! You don't have more guesses left for you. The correct Number was $r");
-      exit(limit);
-    }
-    if (g == r) {
-      print(
-          "Yaay!! You finnally correct it, your guess was $guess which is same with the correct result $r and it took you $limit attempts to findout");
-      exit(r);
+    if (g != null || g != String) {
+      if (limit == 0) {
+        print(
+            "Sorry! You don't have more guesses left for you. The correct Number was $r");
+        exit(limit);
+      } else if (g == r) {
+        print(
+            "Yaay!! You finnally correct it, your guess was $guess which is same with the correct result $r ");
+        exit(r);
+      } else if (g < min || g > max) {
+        print("Please Enter Number Between $min and $max");
+      }
     }
   }
 }
