@@ -3,10 +3,8 @@ import 'dart:math';
 
 main() {
   var users = {'id': 1, 'Name': 'Hassan', 'Email': 'Hassan@gmail.com'};
-  // For loop
-  for (var i = 0; i < users.length; i++) {
-    print(users[i]);
-  }
+  // For loop and forEach
+  // users.forEach((f, i) => print(i));
   NumberGuesser();
 }
 
@@ -14,11 +12,25 @@ main() {
 Random rnd = new Random();
 // Random Number Guesser
 NumberGuesser() {
-  int min = 0, max = 10;
+  int min = 0, max = 10, limit = 4;
+
   int r = min + rnd.nextInt(max - min);
-  stdout.write("Enter Number between ${min} and ${max}");
-  var guess = stdin.readLineSync();
-  guess != r
-      ? print("You Entered $guess unfortunately the correct answer is $r")
-      : '';
+
+  while (true) {
+    stdout.write(
+        "Enter Number between ${min} and ${max} Remember you have $limit left for you: ");
+    var guess = stdin.readLineSync();
+    int g = int.parse(guess);
+    limit -= 1;
+    if (limit == 0) {
+      print(
+          "Sorry! You don't have more guesses left for you. The correct Number was $r");
+      exit(limit);
+    }
+    if (g == r) {
+      print(
+          "Yaay!! You finnally correct it, your guess was $guess which is same with the correct result $r and it took you $limit attempts to findout");
+      exit(r);
+    }
+  }
 }
