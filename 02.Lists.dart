@@ -36,4 +36,23 @@ void main() {
       break;
     }
   }
+
+  var Geedi = new Person("Geedi");
+  var Buubaa = new Person("Buubaa");
+  var Halgaad = new Person("Halgaad");
+  // Create List from Object
+  var list = new List<Person>();
+  list.add(Geedi);
+  list.add(Buubaa);
+  list.add(Halgaad);
+  for (var i = 0; i < list.length; i++) {
+    print(list[i].Name);
+  }
+}
+
+// Create class person
+
+class Person {
+  String Name;
+  Person(this.Name);
 }
