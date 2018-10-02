@@ -50,7 +50,6 @@ class Customer extends Person {
 
   @override
   void Hello() {
-    // TODO: implement Hello
     print("Salaam");
   }
 }
