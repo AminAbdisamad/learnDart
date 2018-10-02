@@ -1,5 +1,3 @@
-import 'dart:io';
-import 'dart:math';
 import 'dart:core';
 
 void main() {
@@ -9,6 +7,7 @@ void main() {
   print(Message("Welcome to String functions"));
   // Passing two integers to Add func
   print(Add(10, 3));
+  print(usserInfo('Ahmed', 'Hassan', 30));
 }
 
 void userDetails(user) {
@@ -25,3 +24,10 @@ String Message(message) {
 int Add(int x, b) {
   return x + b;
 }
+
+// shortHand
+int Multiply(int x, y) => x * y;
+
+//  Optional Param - to make it optional use brackets []
+String usserInfo(String firstName, lastName, [int age = 10]) =>
+    "Hi, My Name is $firstName $lastName I'm $age Years Old";
