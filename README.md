@@ -4,7 +4,7 @@ Dart is an open-source general-purpose programming language.
 
 ### Audience
 
-This tutorial will quite help for developers want to develop single-page web applications,Commandline and server-side tools, and Mobile application with flutter using Dart.
+This tutorial will quite help for developers who want to develop single-page web applications,Commandline and server-side tools, and Mobile application with flutter using Dart.
 
 It contains the following topics
 
