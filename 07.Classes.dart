@@ -22,7 +22,7 @@ class Person {
   // }
 
   // // Create a constructor - Dart way
-  Person(this.name, this.address, this.country, this.age) {}
+  Person(this.name, this.address, this.country, this.age);
 
   // Greeting
   Greeting() {
