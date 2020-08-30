@@ -1,11 +1,12 @@
 import 'dart:math';
 
-// Use var for dynamic variables
+// Use var or dynamic for dynamic variables
 /* 
 This section contains : 
 1. Numbers - Int and double 
 2. Strings
 3.Booleans (bool)
+4. Dynamic 
 */
 void main() {
 // Numbers - there are two types of numbers 1. int 2. double
@@ -14,7 +15,6 @@ void main() {
   num az;
   az = ab + ac;
   print(az);
-
   // Int
   int x, y, z;
   x = 10;
@@ -33,14 +33,13 @@ void main() {
   String firstName = 'Geedi';
   String lastName = 'Hassan';
   // print(firstName + ' ' + lastName);
-  firstName.startsWith('G')
-      ? print('Your Name starts with G')
-      : print("Your name doesnt start with G");
+
+  firstName.startsWith('G') ? print('Your Name starts with G') : print("Your name doesnt start with G");
   lastName.isNotEmpty
       ? print("you are doing good don't forget your lastName")
       : print("Where's your lastName");
 
-  String Message = 'sideen iskaga diiwaan galiyaa somnog conference';
+  String Message = ' sideen iskaga diiwaan galiyaa somnog conference';
   var M = Message.trim();
   print(M);
 
@@ -58,4 +57,12 @@ void main() {
 
   bool bl = false;
   bl ? print('welcome to our event') : print("make it true");
+
+  // Variable can be dynamic negates the benefits of static typing
+  dynamic name = "Aminux";
+  print(name);
+  name = false;
+  print(name);
+
+
 }

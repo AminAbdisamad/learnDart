@@ -3,7 +3,7 @@ This section contains :
 4. Lists 
 */
 void main() {
-  //* Three ways to create a list */
+  //* Four ways to create a list */
 
   // 1 create a list of size 0
   var names = new List();
@@ -18,6 +18,7 @@ void main() {
   // Removing lists from the list
   colors.remove('blue');
   colors.add('Buluug');
+  colors.remove("green");
 
   print(colors);
 
@@ -48,6 +49,17 @@ void main() {
   for (var i = 0; i < list.length; i++) {
     print(list[i].Name);
   }
+
+  // 4. Final way to create 
+  List<String> speakers = ['Hassan','Ali','Ahmed','John','Amin'];
+  print(speakers);
+  speakers.remove("Hassan");
+  print(speakers);
+  speakers.add("Halima");
+  print(speakers);
+
+
+
 }
 
 // Create class person
