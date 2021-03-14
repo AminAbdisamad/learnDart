@@ -8,6 +8,15 @@ This section contains :
 3.Booleans (bool)
 4. Dynamic 
 */
+
+void finalKeyword() {
+  final String name = "Hassan";
+  const surname = "Abdi";
+
+  print(name);
+  print(surname);
+}
+
 void main() {
 // Numbers - there are two types of numbers 1. int 2. double
   num ab = 2;
@@ -26,7 +35,8 @@ void main() {
   double a, b, c;
   a = 2.0;
   b = 10.0;
-  c = pow(a, b);
+  c = a + b;
+  // c = pow(a, b);
   print(c);
 
 // Strings
@@ -34,7 +44,12 @@ void main() {
   String lastName = 'Hassan';
   // print(firstName + ' ' + lastName);
 
-  firstName.startsWith('G') ? print('Your Name starts with G') : print("Your name doesnt start with G");
+  // Final & Constact keyword
+  finalKeyword();
+
+  firstName.startsWith('G')
+      ? print('Your Name starts with G')
+      : print("Your name doesnt start with G");
   lastName.isNotEmpty
       ? print("you are doing good don't forget your lastName")
       : print("Where's your lastName");
@@ -63,6 +78,4 @@ void main() {
   print(name);
   name = false;
   print(name);
-
-
 }

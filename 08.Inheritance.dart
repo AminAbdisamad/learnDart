@@ -13,8 +13,8 @@ main() {
 }
 
 class Person {
-  String name, address, country;
-  int age;
+  late String name, address, country;
+  late int age;
   // Create a constructor - Traditional way
   // Person(String name, address, country, int age) {
   //   this.name = name;
@@ -23,7 +23,7 @@ class Person {
   //   this.age = age;
   // }
 
-  // // Create a constructor - Dart way
+  // Create a constructor - Dart way
   // Person(this.name, this.address, this.country, this.age) {}
 
   // Greeting
@@ -39,7 +39,7 @@ class Person {
 
 // Customer extends Person class
 class Customer extends Person {
-  String company;
+  late String company;
   // Override Method
   @override
   void Greeting() {
@@ -67,7 +67,7 @@ class Location {
 class ElivatedLocation extends Location {
   // ElivatedLocation(num lat, long) : super(lat, long);
   num location;
-  ElivatedLocation(num lat, long, this.location)
+  ElivatedLocation(double lat, long, this.location)
       : super.createLatLong(
             lat, long); // inheriting class with named constructor
 }

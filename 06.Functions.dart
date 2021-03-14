@@ -21,12 +21,12 @@ String Message(message) {
 }
 
 // Function that returns in
-int Add(int x, b) {
+int Add(int x, int b) {
   return x + b;
 }
 
 // shortHand
-int Multiply(int x, y) => x * y;
+int Multiply(int x, int y) => x * y;
 
 //  Optional Param - to make it optional use brackets []
 String usserInfo(String firstName, lastName, [int age = 10]) =>
